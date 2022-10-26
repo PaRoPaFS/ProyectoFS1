@@ -13,26 +13,19 @@
         href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
-
+    <script src="api.js"></script>
     <script src="script.js" defer></script>
     <link rel="icon" type="ico" href="img/favicon.ico" />
-    <title>coder-farm</title>
+    <title>Coder-Farm</title>
 </head>
 
 <body>
     <!-- Este código es para poder insertar inconos de Google Font -->
     <!-- Lo único que se cambia es la palabra serch por la palabra correspondiente al icono que queramos -->
     <!-- para buscar más inconos buscar en el siguiente link: https://fonts.google.com/icons?preview.text=hola%20mundo&preview.text_type=custom&icon.platform=web -->
-
-    <!-- <span class="material-symbols-outlined">
-        search
-    </span> -->
-
     <div class="grid-container">
         <!-- HEADER -->
-        <!-- SECCIÓN DE ANDRÉS -->
-        <div id="marca"></div>
-        <!-- <div class="item1"> -->
+        <div name="top"></div>
             <header class="item1">
                 <nav>
                     <div class="marca"><h1>CODER FARM</h1></div>
@@ -43,7 +36,7 @@
                     </a>
                     <div class="navbar-links">
                         <ul>
-                            <li><a href="#marca">Inicio</a></li>
+                            <li><a href="#top">Inicio</a></li>
                             <li><a href="#who">Quiénes Somos</a></li>
                             <li><a href="#whatwedo">Qué hacemos</a></li>
                             <li><a href="#techs">Tecnologías</a></li>
@@ -54,10 +47,9 @@
                     </div>
                 </nav>
             </header>
-        <!-- </div> -->
 
         <!-- MENÚ -->
-        <div class="item2"><br><br>
+        <div class="item2">
             <h2>RETOS ACTIVOS</h2>
             <div class="retos-activos">
                 <p>En esta sección podrás encontrar los retos que tenemos actualmente activos.</p>
@@ -69,16 +61,16 @@
 
             <div class="retos-activos-lista">
                 <h3>RETO 1</h3>
-                <iframe src="otras-pag/reto1.html" width=280 height=200 scrolling="auto">El navegador no soporta la etiqueta iframe</iframe>
+                <iframe src="otras-pag/reto1.html" width=330 height=400 scrolling="auto">El navegador no soporta la etiqueta iframe</iframe>
                 <br><br>
                 <h3>RETO 2</h3>
-                <iframe src="otras-pag/reto2.html" width=280 height=200 scrolling="auto">El navegador no soporta la etiqueta iframe</iframe>
+                <iframe src="otras-pag/reto2.html" width=330 height=400 scrolling="auto">El navegador no soporta la etiqueta iframe</iframe>
                 <br><br>
                 <h3>RETO 3</h3>
-                <iframe src="otras-pag/reto4.html" width=280 height=200 scrolling="auto">El navegador no soporta la etiqueta iframe</iframe>
+                <iframe src="otras-pag/reto4.html" width=330 height=400 scrolling="auto">El navegador no soporta la etiqueta iframe</iframe>
                 <br><br>
                 <h3>RETO 4</h3>
-                <iframe src="otras-pag/reto5.html" width=280 height=200 scrolling="auto">El navegador no soporta la etiqueta iframe</iframe>
+                <iframe src="otras-pag/reto5.html" width=330 height=400 scrolling="auto">El navegador no soporta la etiqueta iframe</iframe>
 
             </div>
 
@@ -87,12 +79,11 @@
 
         <!-- CONTENIDO PRINCIPAL= MAIN -->
         <div class="item3">
-
-            <section id="who" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="linear"><br><br>
+            <section id="who" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="linear">
                 <div class="who">
                     <h2>¿QUIÉNES SOMOS?</h2>
                     <p>Somos una iniciativa que surge para hacer el nexo entre aquellos programadores trainee que buscan
-                        incanzablemente demostrar sus habilidades y competencias laborales y aquellas empresas que en el
+                        incanzablemente demostrar sus habilidades y competencias laborales y aquellas empresas que, en el
                         afan de alcanzar sus objetivos buscan profesionales que puedan cumplir con proyectos de baja y
                         mediana dificultad basándose en el pricipio de las 3B <b>(Bueno, Bonito y Barato)</b></p>
                 </div>
@@ -105,8 +96,8 @@
                     <p>
                         Ponemos a disposición nuestra plataforma web para que cualquier empresa o negocio publique un
                         "reto de programación". Una vez generado, todo entusiasta Trainee o Junior podrá postularse al
-                        mismo de manera sencilla y nuestro departamento técnico hará los filtros correspondientes para
-                        designar al postulante más adecuado para cada reto.
+                        mismo de manera sencilla y nuestro departamento técnico y de recursos humanos hará los filtros correspondientes para
+                        designar al postulante más adecuado para cada reto y acompañarlo en el proceso.
                     </p>
 
                 </div>
@@ -229,35 +220,27 @@
             </section>
 
             <!-- <section id="projects"></section> -->
-            <section id="portfolio" data-aos="fade-left" data-aos-duration="2000" data-aos-easing="linear"><br><br>
+            <section id="portfolio" data-aos="fade-left" data-aos-duration="2000" data-aos-easing="linear">
                 <div class="containerSlider">
                     <h2>PROYECTOS REALIZADOS</h2>
                     <ul class="sliderContenido">
-                        <li id="trabajo1">
-                            <img class="imgSlider fadeIn" src="/img/realizado1.png" alt="trabajo realizado portfolio">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam soluta officia
-                                consequuntur quis perferendis impedit labore atque, maxime eos ab quas nostrum quam
-                                repellendus! Dicta incidunt saepe consequuntur ipsum cum!</p>
+                        <li id="trabajo1" name="trabajo1">
+                            <img class="imgSlider fadeIn" src="/img/realizado01.png" alt="SmartSuppply">
+                            <p>SmartSupply es una empresa de logistica 3.0 enfocada integrar plataformas de envíos con personas dispuestas a realizar esta tarea.</p>
                         </li>
                         <li id="trabajo2">
-                            <img class="imgSlider fadeIn" src="/img/realizado2.png" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam soluta officia
-                                consequuntur quis perferendis impedit labore atque, maxime eos ab quas nostrum quam
-                                repellendus! Dicta incidunt saepe consequuntur ipsum cum!</p>
+                            <img class="imgSlider fadeIn" src="/img/realizado02.png" alt="SqualLink">
+                            <p>SqualLink une personas que comparten el gusto por eventos de la naturaleza.</p>
                         </li>
                         <li id="trabajo3">
-                            <img class="imgSlider fadeIn" src="/img/realizado3.png" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam soluta officia
-                                consequuntur quis perferendis impedit labore atque, maxime eos ab quas nostrum quam
-                                repellendus! Dicta incidunt saepe consequuntur ipsum cum!</p>
+                            <img class="imgSlider fadeIn" src="/img/realizado03.png" alt="Relaxhub">
+                            <p>Relaxhub es un proveedor de servicios, personal y elementos deportivos para clubes y countries.</p>
                         </li>
                         <li id="trabajo4">
-                            <img class="imgSlider fadeIn" src="/img/realizado4.png" alt="">
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam soluta officia
-                                consequuntur quis perferendis impedit labore atque, maxime eos ab quas nostrum quam
-                                repellendus! Dicta incidunt saepe consequuntur ipsum cum!</p>
+                            <img class="imgSlider fadeIn" src="/img/realizado04.png" alt="Parkable">
+                            <p>Parkable es una administradora de dominios para desarrolladores, programadores y empresas de gestión de sitios web.</p>
                         </li>
-                    </ul><br>
+                    </ul>
                     <ul class="sliderMenu">
                         <li>
                             <a href="#trabajo1">●</a>
@@ -277,30 +260,26 @@
 
             <!-- SECCIÓN DE ANDRES ABOUT US -->
 
-            <section id="about-us-section" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="linear"><br><br>
+            <section id="about-us-section" data-aos="fade-right" data-aos-duration="2000" data-aos-easing="linear">
                 <h2>NOSOTROS</h2>
                 <div class="about-us">
                     <ul class="about-us-lista">
                         <li>
                             <img class="about-us-img" src="/img/andres-headshot.jpeg" alt="Andres">
                             <h3>Andrés</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas illum quos, minima
-                                repellat vel ratione dolorum eveniet molestiae ducimus reiciendis fugiat ipsa est iure
-                                fugit explicabo nemo magni repudiandae ea.</p>
+                            <p>Profesional de IT desde hace 20 años, trabajando con herramientas y tecnología de última geneción. Construye y mejora sistemas que otros usan todos los días. Sus fuertes: la arquitectura de infraestructura y servicios, el trabajo en equipo y la afición por aprender.</p>
                         </li>
                         <li>
                             <img class="about-us-img" src="img/Luis.jpeg" alt="Luis">
                             <h3 class="text-contraste">Luis</h3>
                             <p class="text-contraste">Aficionado a la tecnología. Flexible y razonable. Ingeniero de
                                 profesión. Su meta:
-                                agilizar los procesos para encontrar la forma más fácil de resolver cada problema</p>
+                                agilizar los procesos para encontrar la forma más fácil de resolver cada problema.</p>
                         </li>
                         <li>
-                            <img class="about-us-img" src="" alt="Cristian">
+                            <img class="about-us-img" src="img/cristianProfile.jpg" alt="Cristian">
                             <h3>Cristian</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas illum quos, minima
-                                repellat vel ratione dolorum eveniet molestiae ducimus reiciendis fugiat ipsa est iure
-                                fugit explicabo nemo magni repudiandae ea.</p>
+                            <p>Apasionado de la lógica y la música. Metódico y organizado. Analizar cada situación en búsqueda de la solución más eficiente y expeditiva. Si no sabe algo, lo googlea hasta saberlo y entenderlo.</p>
                         </li>
                     </ul>
                 </div>
@@ -308,10 +287,8 @@
 
         </div>
 
-
-
         <!-- ASIDE -->
-        <div class="item4"><br><br>
+        <div class="item4">
             <h2>CLIENTES</h2>
             <div>
                 <p>Empresas que han confiado en nosotros:</p>
@@ -336,7 +313,7 @@
                 <input type="text" name="Email" placeholder="Email" class="hijo input_3">
                 <br>
                 <label for="telefono"></label>
-                <input type="number" name="phone" placeholder="Teléfono" class="hijo input_4">
+                <input type="tel" name="phone" placeholder="Teléfono" class="hijo input_4">
                 <br>
                 <label for="comentarios"></label>
                 <textarea id="msg" name="Comentarios" cols="30" rows="10" placeholder="Descripción del proyecto"
@@ -359,61 +336,41 @@
                     <input type="checkbox" name="conocimiento previo" value="JS">JavaScript
                     <input type="checkbox" name="conocimiento previo" value="PT">Python
                     <input type="checkbox" name="conocimiento previo" value="O">Otro
-
-                    <!-- <br> -->
-
-                    <!-- <label for="intereses">Tengo interés en...</label>
-                            <input type="radio" name="interes" value="1">Python
-                            <input type="radio" name="interes" value="2">Java
-                            <input type="radio" name="interes" value="3">PHP
-                            <input type="radio" name="interes" value="4">Diseño UX/UI
-                        -->
                 </fieldset><br><br>
 
                 <input class="boton_enviar" type="submit" value="Enviar">
+                <p id="dolar"></p>    
             </form>
+            
+            
         </div>
 
         <!-- FOOTER -->
         <div class="item6">
             <footer class="grid-container-footer">
-
-                <div class="area_1">
-                    <!-- Nada aún -->
-                </div>
-
                 <div class="area_2">
                     <h4>CODER FARM</h4>
                 </div>
 
                 <div class="area_3">
                     <div class="boton_inicio">
-                        <a href="#marca">Incio</a>
+                        <a href="#top">Inicio</a>
                     </div>
                 </div>
 
                 <div class="area_4">
-                    <!-- <h5>Contacto</h5><span class="material-symbols-outlined">sms</span>+54 9 11 xxxx-xxxx -->
                     <h5>Contacto</h5>
-                    <span class="material-symbols-outlined">smartphone</span>+54 9 11 xxxx-xxxx
-                    <br>
-                    <span class="material-symbols-outlined">location_on</span>Buenos Aires, Argentina.
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0168878894538!2d-58.38375908425695!3d-34.60373446500705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1666466400919!5m2!1ses-419!2sar" width="250" height="120" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p><span class="material-symbols-outlined">smartphone</span>+54 9 11 xxxx-xxxx</p>
+                    <p><span class="material-symbols-outlined">location_on</span>Buenos Aires, Argentina.</p>
+                    <p class="copyr">© 2022 <code translate="no">CODER FARM</code> All rights reserved</p>
                 </div>
-
-                <div class="area_5">
-
-                    <p><small>© 2022 <code translate="no"><span>CODER FARM</span></code>
-                            <br>
-                            All rights reserved</p>
-                </div>
-
             </footer>
         </div>
     </div>
-
+    
     <script>
         AOS.init();
     </script>
 </body>
-
 </html>
